@@ -9,7 +9,4 @@ public interface List<T> extends Collection<T> {
     T remove(int index);
     int indexOf(Object o);
     int lastIndexOf(Object o);
-    List<T> subList(int fromIndex, int toIndex);
-    ListIterator<T> listIterator();
-    ListIterator<T> listIterator(int index);
 }

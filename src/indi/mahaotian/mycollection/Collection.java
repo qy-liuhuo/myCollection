@@ -1,6 +1,6 @@
 package indi.mahaotian.mycollection;
 
-public interface Collection<T> extends Iterable<T>{
+public interface Collection<T> extends java.lang.Iterable<T> {
     int size();
     boolean isEmpty();
     boolean contains(Object o);
