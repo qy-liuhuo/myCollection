@@ -29,6 +29,12 @@ public class ArrayList<E> implements List<E> , RandomAccess, Cloneable, java.io.
         this.elementData = new Object[]{};
     }
 
+    public ArrayList(Collection<? extends E> c){
+        this();
+        this.addAll(c);
+
+    }
+
     @Override
     public int size() {
         return this.size;
