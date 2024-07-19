@@ -166,7 +166,7 @@ public class ArrayList<E> implements List<E> , RandomAccess, Cloneable, java.io.
 
     @Override
     public void add(int index, E element) {
-        if(index>=size)
+        if(index < 0 || index > size)
             throw new IndexOutOfBoundsException("Index:"+index+"is larger than Size:"+size);
         if(this.size == elementData.length)
             this.grow(this.size+1);
@@ -212,14 +212,14 @@ public class ArrayList<E> implements List<E> , RandomAccess, Cloneable, java.io.
 
     @Override
     public E get(int index) {
-        if(index>=size)
+        if(index < 0 ||index>=size)
             throw new ArrayIndexOutOfBoundsException("Index:"+index+"is larger than Size:"+size);
         return (E) elementData[index];
     }
 
     @Override
     public E set(int index, E element) {
-        if(index>=size)
+        if(index < 0 ||index>=size)
             throw new IndexOutOfBoundsException("Index:"+index+"is larger than Size:"+size);
         E oldValue = (E) elementData[index];
         elementData[index] = element;
