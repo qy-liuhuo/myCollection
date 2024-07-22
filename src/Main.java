@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> test= new LinkedList<>();
+        Queue<Integer> q = new PriorityQueue<>();
+        ArrayList
     }
 }
