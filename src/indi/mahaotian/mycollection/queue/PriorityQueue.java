@@ -1,6 +1,5 @@
 package indi.mahaotian.mycollection.queue;
 
-import java.io.ObjectStreamException;
 import java.io.Serializable;
 import java.util.*;
 
@@ -160,9 +159,9 @@ public class PriorityQueue<E> extends AbstractQueue<E> implements Serializable {
 
     private void siftUp(int i, E e) {
         if (comparator != null)
-            siftUpWithComparator(k, x);
+            siftUpWithComparator(i, e);
         else
-            siftUpWithoutComparator(k, x);
+            siftUpWithoutComparator(i, e);
     }
 
     @SuppressWarnings("unchecked")
